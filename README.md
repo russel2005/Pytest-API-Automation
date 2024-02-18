@@ -14,14 +14,22 @@ def test_api1():
 - run all test
   ``` > pytest ```
 - run all test in folder
-  ``` > pytest folder/folder```
-- run test with specific name
-  ``` > pytest -k api01```
+  ``` > pytest -v folder/folder```
 - run test single file/ module
-  ``` > pytest -k folder/test_module1.py```
-- run test single test/funciton
-  ``` > pytest -k folder/test_module1.py::api1```
-- run test with marker
-  ``` > pytest -m smoke```
-
-
+  ``` > pytest -v folder/test_module1.py```
+- run test single test/function
+  ``` > pytest -v folder/test_module1.py::test_api1```
+- run set of test based on function name
+  ``` > pytest -v -k api01
+      > pytest -v -k "api01 and api02"
+  ```
+- run test with marker for group test, test can have multiples marker
+  ``` > pytest -v -m smoke```
+- run test but check the collection of test before run
+  ``` > pytest -v --collect-only -k "api01"```
+- exit test when it failed during run
+  ``` > pytest -v --exitfirst```
+- exit test when it failed multiple number of test
+  ``` > pytest -v --maxfail=3```
+- print something in cmd during test
+  ``` > pytest -v -s```
