@@ -4,6 +4,9 @@
 - Name all the test classes start with Test 
 - Name all the test modules with test_.py 
 - Name all the test functions with test_():
+### [Fixtures](#fixtures)
+That are run by pytest before the actual test fuctions. Ex Setup DB Connection, or initialize webDriver
+
 ### [Marker](#marker)
 ```
 import pytest
