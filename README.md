@@ -5,7 +5,7 @@
 - Name all the test modules with test_.py 
 - Name all the test functions with test_():
 ### [Fixtures](#fixtures)
-That are run by pytest before the actual test fuctions. Ex Setup DB Connection, or initialize webDriver
+That are run by pytest before the actual test fuctions. Ex Setup DB Connection, or initialize webDriver. Can put fixtures in test files or, in conftest.py for making fixtures available in multiple test files. it use as an argument in the test function.
 
 ### [Marker](#marker)
 ```
