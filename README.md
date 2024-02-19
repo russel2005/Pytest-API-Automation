@@ -13,6 +13,10 @@ import pytest
 @pytest.mark.smoke
 def test_api1():
 ```
+- Markers running supports: and, or, not, parentheses operators.
+-- • E.g. ```pytest -m "sanity and uitest"```
+- Can define markers in module/file level:
+-- • ```pytestmark=[pytest.mark.smoke, pytest.mark.sanity]```
 ### [Test Discovery](#Test)
 - run all test
   ``` > pytest ```
