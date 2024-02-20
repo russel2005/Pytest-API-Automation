@@ -40,3 +40,6 @@ def test_api1():
   ``` > pytest -v --maxfail=3```
 - print something in cmd during test
   ``` > pytest -v -s```
+
+### find all application content-type : [Visit](https://stackoverflow.com/questions/23714383/what-are-all-the-possible-values-for-http-content-type-header)
+ 
